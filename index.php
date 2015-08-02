@@ -4,7 +4,7 @@
 -->
 <html>
 	<head>
-		<title> Aricent - Days Off</title>
+		<title>Aricent - Days Off</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -45,8 +45,9 @@
 	<!-- Main Body -->
 		<div id="main">
 			<div id="content" class="container">
+				<img src="images/GoPro_logo.png" alt="GoPro Logo">
 			<form name="login_form" action="routes/login.php" method="post">
-					<label>UserName :</label>
+					<label>Aricent ID :</label>
 					<input id="name" name="username" placeholder="username" type="text" value="<?php echo htmlspecialchars($username); ?>"><br />
 					<label>Password :</label>
 					<input id="password" name="password" placeholder="**********" type="password"><br />
@@ -56,7 +57,7 @@
 			<p>
 				New here? <a href="routes/signup.php">Register!</a>
 			</p>
-
+			<img src="images/photos.jpg" alt="Bad Coding">
 			</div>
 		</div>
 
@@ -74,18 +75,23 @@
 			<div class="container">
 				<section>
 					<header>
-						<h2>Contact Me</h2>
+						<p>
+							found a bug?
+						</p>
+						<h2>Report Me</h2>
 						<span class="inline"></span>
 					</header>
 						<a href="mailto:ashish.kapoor@aricent.com">Ashish@Aricent</a>
 				</section>
+				<img src="images/me.jpg" alt="Bad Coding">
+
 			</div>
 		</div>
 
 	<!-- Copyright -->
 		<div id="copyright">
 			<div class="container">
-				Design: <a href="https://www.aricent.com">Aricent &copy; All Rights Reserved</a>
+				Design: <a href="https://www.aricent.com"> &copy; 2015 Aricent Technologies (Holdings) Ltd. All Rights Reserved</a>
 			</div>
 		</div>
 	</body>

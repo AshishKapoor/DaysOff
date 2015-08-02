@@ -1,29 +1,20 @@
 <!-- PHP CODE -->
-<?php
-    //Create database connection
-    $dbhost       = 'localhost';
-    $dbuser       = 'aricent';
-    $dbpass       = 'root';
-    $dbname       = 'aricent';
-    $port         = 8889;
+<?PHP
+    $user_name = "aricent";
+    $password = "root";
+    $database = "aricent";
+    $host = "localhost";
+    $db_handle = mysql_connect($host, $user_name, $password);
+    $db_found = mysql_select_db($database, $db_handle);
 
-    $connection     = mysql_connect("$host:$port",$user,$password,$dbname);
-    $db_selected    = mysql_select_db($db,$link);
-
-    //Connection test
-    if (mysqli_connect_error()){
-        die("Database connection failed: " .
-        mysqli_connect_error() .
-        " (" . mysqli_connect_errno().")"
-        );
+    if ($db_found) {
+        echo "Database Found ";
+        mysql_close($db_handle);
     }
-        $query = "SELECT * FROM users";
-        $result = mysqli_query($connection,$query)
-        echo $result;
-        if (!$result){
-            die("Database query failed");
-        }
-    ?>
+    else {
+        echo "Database NOT Found ";
+    }
+?>
 
 <!-- HTML CODE -->
     <!DOCTYPE html>
