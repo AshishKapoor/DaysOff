@@ -12,6 +12,7 @@
 		<script src="scripts/skel.min.js"></script>
 		<script src="scripts/skel-panels.min.js"></script>
 		<script src="scripts/init.js"></script>
+
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -26,7 +27,7 @@
 				<!-- Nav -->
 				<nav id="nav">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
+						<li class="active"><a href="index.php">Home</a></li>
 						<li class="active"><a onClick="ScrollToBottom();" >About</a></li>
 					</ul>
 				</nav>
@@ -43,13 +44,21 @@
 	<!-- Main -->
 		<div id="main">
 			<div id="content" class="container">
-				<form action="" method="post">
-				<label>UserName :</label>
-				<input id="name" name="username" placeholder="username" type="text">
-				<label>Password :</label>
-				<input id="password" name="password" placeholder="**********" type="password">
-				<input name="submit" type="submit" value="Login ">
-				</form>
+			<form name="daysoff_login_form" action="" method="post">
+			<tr id="daysoff_login_tablerecord">
+				<td>
+					<label>UserName :</label>
+					<input id="name" name="username" placeholder="username" type="text">
+				</td>
+				<td>
+					<label>Password :</label>
+					<input id="password" name="password" placeholder="**********" type="password">
+				</td>
+				<td>
+					<input name="submit" type="submit" value="Login ">
+				</td>
+			</tr>
+			</form>
 			</div>
 		</div>
 
