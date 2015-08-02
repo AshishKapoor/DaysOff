@@ -3,11 +3,13 @@
 <title>Register</title>
 </head>
 <body>
-<form action="index.html">
+
+
+<form action="" method="post">
         Username:
-        <input type="username" name="username" />
+        <input type="username" name="username" /><br/>
         Password:
-        <input type="password" name="password" />
+        <input type="password" name="password" /><br/>
         &nbsp;
         <input type="submit" name="submit" value="Sign Up" />
 </div>
