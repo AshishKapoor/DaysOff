@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	DaysOff By Ashish Kapoor
+	DaysOff Application By Ashish Kapoor
 -->
 <html>
 	<head>
@@ -21,7 +21,7 @@
 	</head>
 	<body class="homepage">
 
-	<!-- Header -->
+	<!-- Header Part -->
 		<div id="header">
 			<div id="nav-wrapper">
 				<!-- Nav -->
@@ -40,29 +40,27 @@
 				</div>
 			</div>
 		</div>
+		<?php echo $message; ?>
 
-	<!-- Main -->
+	<!-- Main Body -->
 		<div id="main">
 			<div id="content" class="container">
-			<form name="daysoff_login_form" action="" method="post">
-			<tr id="daysoff_login_tablerecord">
-				<td>
+			<form name="login_form" action="routes/login.php" method="post">
 					<label>UserName :</label>
-					<input id="name" name="username" placeholder="username" type="text">
-				</td>
-				<td>
+					<input id="name" name="username" placeholder="username" type="text" value="<?php echo htmlspecialchars($username); ?>"><br />
 					<label>Password :</label>
-					<input id="password" name="password" placeholder="**********" type="password">
-				</td>
-				<td>
-					<input name="submit" type="submit" value="Login ">
-				</td>
-			</tr>
+					<input id="password" name="password" placeholder="**********" type="password"><br />
+					<input name="submit" type="submit" value="Login">
+					<input name="clear" type="button" value="Clear">
 			</form>
+			<p>
+				New here? <a href="routes/signup.php">Register!</a>
+			</p>
+
 			</div>
 		</div>
 
-	<!-- Tweet -->
+	<!-- Tweet of the Day -->
 		<div id="tweet">
 			<div class="container">
 				<section>
@@ -71,7 +69,7 @@
 			</div>
 		</div>
 
-	<!-- Footer -->
+	<!-- Footer Part -->
 		<div id="footer">
 			<div class="container">
 				<section>
