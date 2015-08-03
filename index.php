@@ -5,6 +5,7 @@
 <html>
 	<head>
 		<title>Aricent - Days Off</title>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -48,7 +49,7 @@
 				<img src="images/GoPro_logo.png" alt="GoPro Logo">
 			<form name="login_form" action="routes/login.php" method="post">
 					<label>Aricent ID :</label>
-					<input id="name" name="username" placeholder="username" type="text" value="<?php echo htmlspecialchars($username); ?>"><br />
+					<input id="name" name="username" placeholder="Aricent ID" type="text" value=""><br />
 					<label>Password :</label>
 					<input id="password" name="password" placeholder="**********" type="password"><br />
 					<input name="submit" type="submit" value="Login">
