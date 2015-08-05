@@ -55,7 +55,7 @@
 		<div id="main">
 			<div id="content" class="container">
 				<img src="images/GoPro_logo.png" alt="GoPro Logo">
-			<form name="login_form" action="routes/login.php" method="post">
+			<form name="login_form" action="routes/users.php" method="post">
 					<label>Aricent ID :</label>
 					<input id="name" name="username" placeholder="Aricent ID" type="text" value=""><br />
 					<label>Password :</label>

@@ -22,6 +22,22 @@
     <noscript>
       <link rel="stylesheet" href="/css/changepassword.css">
     </noscript>
+    
+    <style media="screen">
+    h2{
+      float:inherit;
+      margin:auto;
+      padding: 15px;
+      width: 350px;
+    }
+    table{
+        float:inherit;
+        margin:auto;
+        padding: 15px;
+        width: 350px;
+    }
+
+    </style>
 </head>
 
 <body>
