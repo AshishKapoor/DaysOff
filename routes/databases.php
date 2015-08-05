@@ -1,3 +1,11 @@
+<!-- TODO
+1. Create MySQL tables
+2. Table users (Done) (user_id(PK),emp_id,password)
+3. Table events (event_id(PK),date,reason)
+4. 
+5.
+-->
+
 <!-- PHP CODE -->
 <?PHP
     $user_name = "aricent";
@@ -19,10 +27,21 @@
 <!-- HTML CODE -->
     <!DOCTYPE html>
     <html>
-        <head>
-            <meta charset="utf-8">
-            <title></title>
-        </head>
+    <head>
+      <title>Aricent - Days Off</title>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900'
+      rel='stylesheet' type='text/css'>
+      <script src="scripts/skel.min.js"></script>
+        <script src="scripts/init.js"></script>
+
+        <noscript>
+          <link rel="stylesheet" href="/css/databases.css">
+        </noscript>
+    </head>
         <body>
             <?php
                 //User Returned Data from the Database.

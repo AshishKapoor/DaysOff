@@ -1,7 +1,5 @@
 /*
-	Linear by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+	Linear by Ashish Kapoor
 */
 
 skel.init({
@@ -52,9 +50,8 @@ skel.init({
 			}
 		}
 	}
-
-
-});
+	}
+);
 
 function ScrollToBottom(){
 	window.scrollTo(0,document.body.scrollHeight);

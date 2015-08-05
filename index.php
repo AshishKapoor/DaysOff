@@ -1,25 +1,33 @@
-<!DOCTYPE HTML>
-<!--
-	DaysOff Application By Ashish Kapoor
+<!-- 	DaysOff Application By Ashish Kapoor
+	TODO:
+	1. Complete Databases & Sign Up
+	2. Complete Databases & Login
+	3. Complete Admin
+	4. Complete Users
+	5.
 -->
+
+<!DOCTYPE HTML>
 <html>
+
+	<!-- head -->
 	<head>
 		<title>Aricent - Days Off</title>
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="images/favicon.ico" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900'
+		rel='stylesheet' type='text/css'>
 		<script src="scripts/skel.min.js"></script>
-		<script src="scripts/skel-panels.min.js"></script>
-		<script src="scripts/init.js"></script>
+			<script src="scripts/init.js"></script>
 
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-		    <link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
+			<noscript>
+				<link rel="stylesheet" href="/css/style.css">
+			</noscript>
 	</head>
+
+	<!-- Body -->
 	<body class="homepage">
 
 	<!-- Header Part -->
@@ -56,13 +64,13 @@
 					<input name="clear" type="button" value="Clear">
 			</form>
 			<p>
-				New here? <a href="routes/signup.php">Register!</a>
+				New here? <a href="routes/changepassword.php">Generate/Change Password</a>
 			</p>
 			<img src="images/photos.jpg" alt="Bad Coding">
 			</div>
 		</div>
 
-	<!-- Tweet of the Day -->
+	<!-- Thought (Quote) -->
 		<div id="tweet">
 			<div class="container">
 				<section>
@@ -85,8 +93,7 @@
 						<a href="mailto:ashish.kapoor@aricent.com">Ashish@Aricent</a>
 				</section>
 				<img src="images/me.jpg" alt="Bad Coding">
-
-			</div>
+				</div>
 		</div>
 
 	<!-- Copyright -->
