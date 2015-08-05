@@ -1,106 +1,106 @@
 <!-- 	DaysOff Application By Ashish Kapoor
-	TODO:
-	1. Complete Databases & Sign Up
-	2. Complete Databases & Login
-	3. Complete Admin
-	4. Complete Users
-	5.
+TODO:
+1. Complete Databases & Sign Up
+2. Complete Databases & Login
+3. Complete Admin
+4. Complete Users
+5.
 -->
 
 <!DOCTYPE HTML>
 <html>
 
-	<!-- head -->
-	<head>
-		<title>Aricent - Days Off</title>
-		<link rel="shortcut icon" href="images/favicon.ico" />
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900'
-		rel='stylesheet' type='text/css'>
-		<script src="scripts/skel.min.js"></script>
-			<script src="scripts/init.js"></script>
+<!-- head -->
+<head>
+	<title>Aricent - Days Off</title>
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900'
+	rel='stylesheet' type='text/css'>
+	<script src="scripts/skel.min.js"></script>
+	<script src="scripts/init.js"></script>
 
-			<noscript>
-				<link rel="stylesheet" href="/css/style.css">
-			</noscript>
-	</head>
+	<noscript>
+		<link rel="stylesheet" href="/css/style.css">
+	</noscript>
+</head>
 
-	<!-- Body -->
-	<body class="homepage">
+<!-- Body -->
+<body class="homepage">
 
 	<!-- Header Part -->
-		<div id="header">
-			<div id="nav-wrapper">
-				<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<li class="active"><a href="index.php">Home</a></li>
-						<li class="active"><a onClick="ScrollToBottom();" >About</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="container">
+	<div id="header">
+		<div id="nav-wrapper">
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li class="active"><a href="index.php">Home</a></li>
+					<li class="active"><a onClick="ScrollToBottom();" >About</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="container">
 
-				<!-- Logo -->
-				<div id="logo">
-					<h1><a href="#">Days Off</a></h1>
-				</div>
+			<!-- Logo -->
+			<div id="logo">
+				<h1><a href="#">Days Off</a></h1>
 			</div>
 		</div>
-		<?php echo $message; ?>
+	</div>
+	<?php echo $message; ?>
 
 	<!-- Main Body -->
-		<div id="main">
-			<div id="content" class="container">
-				<img src="images/GoPro_logo.png" alt="GoPro Logo">
+	<div id="main">
+		<div id="content" class="container">
+			<img src="images/GoPro_logo.png" alt="GoPro Logo">
 			<form name="login_form" action="routes/users.php" method="post">
-					<label>Aricent ID :</label>
-					<input id="name" name="username" placeholder="Aricent ID" type="text" value=""><br />
-					<label>Password :</label>
-					<input id="password" name="password" placeholder="**********" type="password"><br />
-					<input name="submit" type="submit" value="Login">
-					<input name="clear" type="button" value="Clear">
+				<label>Aricent ID :</label>
+				<input id="name" name="username" placeholder="Aricent ID" type="text" value=""><br />
+				<label>Password :</label>
+				<input id="password" name="password" placeholder="**********" type="password"><br />
+				<input name="submit" type="submit" value="Login">
+				<input name="clear" type="button" value="Clear">
 			</form>
 			<p>
 				New here? <a href="routes/changepassword.php">Generate/Change Password</a>
 			</p>
 			<img src="images/photos.jpg" alt="Bad Coding">
-			</div>
 		</div>
+	</div>
 
 	<!-- Thought (Quote) -->
-		<div id="tweet">
-			<div class="container">
-				<section>
-					<blockquote>"Always inform before you take off". ~ 127 hours [The Movie]</blockquote>
-				</section>
-			</div>
+	<div id="tweet">
+		<div class="container">
+			<section>
+				<blockquote>"Always inform before you take off". ~ 127 hours [The Movie]</blockquote>
+			</section>
 		</div>
+	</div>
 
 	<!-- Footer Part -->
-		<div id="footer">
-			<div class="container">
-				<section>
-					<header>
-						<p>
-							found a bug?
-						</p>
-						<h2>Report Me</h2>
-						<span class="inline"></span>
-					</header>
-						<a href="mailto:ashish.kapoor@aricent.com">Ashish@Aricent</a>
-				</section>
-				<img src="images/me.jpg" alt="Bad Coding">
-				</div>
+	<div id="footer">
+		<div class="container">
+			<section>
+				<header>
+					<p>
+						found a bug?
+					</p>
+					<h2>Report Me</h2>
+					<span class="inline"></span>
+				</header>
+				<a href="mailto:ashish.kapoor@aricent.com">Ashish@Aricent</a>
+			</section>
+			<img src="images/me.jpg" alt="Bad Coding">
 		</div>
+	</div>
 
 	<!-- Copyright -->
-		<div id="copyright">
-			<div class="container">
-				Design: <a href="https://www.aricent.com"> &copy; 2015 Aricent Technologies (Holdings) Ltd. All Rights Reserved</a>
-			</div>
+	<div id="copyright">
+		<div class="container">
+			Design: <a href="https://www.aricent.com"> &copy; 2015 Aricent Technologies (Holdings) Ltd. All Rights Reserved</a>
 		</div>
-	</body>
+	</div>
+</body>
 </html>
