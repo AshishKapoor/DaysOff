@@ -10,20 +10,27 @@ Calendar View (Eagle Eye View of the Calendar)
 <html>
 <head>
   <title>Aricent - Days Off</title>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900'
-  rel='stylesheet' type='text/css'>
-  <script src="scripts/skel.min.js"></script>
-    <script src="scripts/init.js"></script>
-
-    <noscript>
-      <link rel="stylesheet" href="/css/admin.css">
-    </noscript>
+    <link rel="stylesheet" href="/css/admin.css">
+    <style media="screen">
+    #copyright {
+        background:black;
+        width:100%;
+        height:20px;
+        position:absolute;
+        bottom:0;
+        left:0;
+        text-align: center;
+    }
+    </style>
 </head>
     <body>
       Calendar View (Eagle Eye View of the Calendar)
+
+      <!-- Copyright -->
+      <div id="copyright">
+          <div class="container">
+              Design: <font color="white">&copy; 2015 Aricent Technologies (Holdings) Ltd. All Rights Reserved</font>
+          </div>
+      </div>
     </body>
 </html>

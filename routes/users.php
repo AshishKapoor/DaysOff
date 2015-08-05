@@ -43,6 +43,15 @@ h3{
     text-align: center;
 }
 
+#copyright {
+	background:black;
+	width:100%;
+	height:20px;
+	position:absolute;
+	bottom:0;
+	left:0;
+    text-align: center;
+}
 
 </style>
 </head>
@@ -125,7 +134,13 @@ h3{
                 <input type="button" name="name" value="Cancel"></td>
             </tr>
         </table>
+        </div>
 
-    </div>
+        <!-- Copyright -->
+        <div id="copyright">
+            <div class="container">
+                Design: <font color="white">&copy; 2015 Aricent Technologies (Holdings) Ltd. All Rights Reserved</font>
+            </div>
+        </div>
 </body>
 </html>
