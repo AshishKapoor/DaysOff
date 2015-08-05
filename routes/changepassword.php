@@ -38,7 +38,7 @@
     #copyright {
     	background:black;
     	width:100%;
-    	height:20px;
+    	height:50px;
     	position:absolute;
     	bottom:0;
     	left:0;
@@ -75,11 +75,11 @@
             </tr>
         </table>
     </form>
-    
+
     <!-- Copyright -->
     <div id="copyright">
         <div class="container">
-            Design: <font color="white">&copy; 2015 Aricent Technologies (Holdings) Ltd. All Rights Reserved</font>
+            <font color="white">Design: &copy; 2015 Aricent Technologies (Holdings) Ltd. All Rights Reserved</font>
         </div>
     </div>
 </body>
