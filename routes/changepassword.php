@@ -22,7 +22,7 @@
     <noscript>
       <link rel="stylesheet" href="/css/changepassword.css">
     </noscript>
-    
+
     <style media="screen">
     h2{
       float:inherit;
@@ -61,7 +61,7 @@
               <td><input type="password" name="verfy_password" placeholder="*******"></td>
             </tr>
             <tr>
-            <td><input type="button" name="submit" value="Register"></td>
+            <td><input type="button" name="submit" value="Set Password"></td>
             </tr>
           </table>
       </form>
