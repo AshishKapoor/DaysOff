@@ -7,24 +7,106 @@
 -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-  <title>Aricent - Days Off</title>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900'
-  rel='stylesheet' type='text/css'>
-  <script src="scripts/skel.min.js"></script>
-    <script src="scripts/init.js"></script>
-
-    <noscript>
-      <link rel="stylesheet" href="/css/users.css">
-    </noscript>
+<style>
+.leave_date {
+    float:inherit;
+    margin:auto;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+}
+h1 {
+  float:inherit;
+  margin:auto;
+  padding: 15px;
+  width: 350px;
+}
+h2{
+  float:inherit;
+  margin:auto;
+  padding: 15px;
+  width: 350px;
+}
+</style>
 </head>
+<body>
 
-    <body>
-      Users
-    </body>
+<h1>Welcome User!</h1>
+<h2>Apply for the Leaves here.</h2>
+
+<div class="leave_date">
+  <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Leaves</h2>
+  <label>Date:</label>
+
+  <select name="dropdown_Date">
+    <option value="1" selected>1</option>
+    <option value="2">2</option>
+    <option value="3" >3</option>
+    <option value="4">4</option>
+    <option value="5" >5</option>
+    <option value="6">6</option>
+    <option value="7" >7</option>
+    <option value="8">8</option>
+    <option value="9" >9</option>
+    <option value="10">10</option>
+    <option value="11" >11</option>
+    <option value="12">12</option>
+    <option value="13" >13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17" >17</option>
+    <option value="18">18</option>
+    <option value="19" >19</option>
+    <option value="20">20</option>
+    <option value="21" >21</option>
+    <option value="22">22</option>
+    <option value="23" >23</option>
+    <option value="24">24</option>
+    <option value="25" >25</option>
+    <option value="26">26</option>
+    <option value="27" >27</option>
+    <option value="28">28</option>
+    <option value="29" >29</option>
+    <option value="30">30</option>
+    <option value="31" >31</option>
+  </select>
+
+  <select name="dropdown_Month">
+    <option value="Jan" selected>Jan</option>
+    <option value="Feb">Feb</option>
+    <option value="Mar">Mar</option>
+    <option value="Apr">Apr</option>
+    <option value="May">May</option>
+    <option value="Jun">Jun</option>
+    <option value="Jul">Jul</option>
+    <option value="Aug">Aug</option>
+    <option value="Sep">Sep</option>
+    <option value="Oct">Oct</option>
+    <option value="Nov">Nov</option>
+    <option value="Dec">Dec</option>
+
+
+  </select>
+
+  <select name="dropdown_Year">
+    <option value="2015" selected>2015</option>
+    <option value="2016" >2016</option>
+    <option value="2017" >2017</option>
+    <option value="2018" >2018</option>
+    <option value="2019" >2019</option>
+    <option value="2019" >2020</option>
+  </select>
+  <br/><br/>
+  <label>Reason:</label>
+  <textarea rows="5" cols="30" name="description" placeholder="Enter reason here..."></textarea>
+  <br/><br/>
+  <input type="submit" name="name" value="Submit">
+  <input type="button" name="name" value="Cancel">
+
+    </div>
+  </body>
 </html>
