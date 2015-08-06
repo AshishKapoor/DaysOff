@@ -10,41 +10,7 @@
 <html>
 <head>
     <title>Aricent - Days Off</title>
-    <style media="screen">
-    .header{
-        background: black;
-        margin: auto;
-        padding: 10px;
-        text-align: center;
-    }
-    h1{
-        float:inherit;
-        margin:auto;
-        padding: 30px;
-        width: 350px;
-
-    }
-    table{
-        float:inherit;
-        margin:auto;
-        padding: 80px;
-        width: 300px;
-        height: 300px;
-        border: 3px solid black;
-    }
-    .h3_class{
-        text-align: center;
-    }
-    #copyright {
-    	background:black;
-    	width:100%;
-    	height:50px;
-    	position:absolute;
-    	bottom:0;
-    	left:0;
-        text-align: center;
-    }
-    </style>
+    <link rel="stylesheet" href="/css/changepassword.css" charset="utf-8">
 </head>
 
 <body>
@@ -71,6 +37,7 @@
                 <td><input type="password" name="verfy_password" placeholder="*******"></td>
             </tr>
             <tr>
+                <td></td>
                 <td><input type="button" name="submit" value="Set Password"></td>
             </tr>
         </table>

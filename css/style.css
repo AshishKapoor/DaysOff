@@ -9,6 +9,20 @@
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
+fieldset{
+  border: 1px solid black;
+  width: 400px;
+  margin:auto;
+  padding: 20px;
+}
+#button{
+width:100px;
+height:40px;
+border: 10px;
+background:black;
+font-weight:bold;
+font-size:20px
+}
 
 	body {
 		margin: 0;

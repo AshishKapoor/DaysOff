@@ -7,61 +7,21 @@
 -->
 
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
-<style>
-table{
-    float:inherit;
-    padding: inherit;
-    width: 300px;
-    height: 300px;
-    border: 3px solid black;
-}
-
-.leave_date {
-float:inherit;
-margin:auto;
-padding: 50px;
-width: 350px;
-height: 300px;
-}
-
-.header{
-background: black;
-margin: auto;
-padding: 10px;
-text-align: center;
-}
-
-h1 {
-float:inherit;
-margin:auto;
-padding: 30px;
-width: 350px;
-}
-h3{
-    text-align: center;
-}
-
-#copyright {
-	background:black;
-	width:100%;
-	height:50px;
-	position:absolute;
-	bottom:0;
-	left:0;
-    text-align: center;
-}
-
-</style>
+    <title>Aricent - Days Off</title>
+<link rel="stylesheet" href="/css/users.css" charset="utf-8">
 </head>
+
 <body>
-<div class="header">
-    <h1> <font color="white">Welcome User!</font></h1>
-</div>
-<br/>
-<div class="leave_date">
-    <h3>Apply your leave plan</h3>
+    <div class="header">
+
+        <h1> <font color="white">Welcome User!</font></h1>
+
+    </div>
+
+    <div class="leave_date">
+        <h3>Apply your leave plan</h3>
     <table border="1px solid black" >
         <tr>
             <td><label>Date:</label></td>
@@ -134,8 +94,7 @@ h3{
                 <input type="button" name="name" value="Cancel"></td>
             </tr>
         </table>
-        </div>
-
+    </div>
         <!-- Copyright -->
         <div id="copyright">
             <div class="container">

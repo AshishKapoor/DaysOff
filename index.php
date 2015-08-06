@@ -1,3 +1,34 @@
+<?php
+//redirection function
+session_start();
+
+if ($_POST["submit"]){
+	include_once("routes/connection.php");
+
+	$empId = strip_tags($_POST["emp_id"]);
+	$password = strip_tags($_POST["password"]);
+
+	$sql = "SELECT emp_id, password FROM users WHERE emp_id = '$empId' AND password = '$password'";
+	$query = mysql_query($dbCon,$sql);
+
+	if ($query){
+		$row = mysql_fetch_row($query);
+		$dbId = $row[0];
+		$dbEmpId = $row[1];
+		$dbPassword = $row[2];
+		echo "$dbEmpId $dbPassword";
+	}
+
+	if ($empId == $dbEmpId && $password == $dbPassword){
+		//$_SESSION['empId'] = $empId;
+		header("Location: routes/admin.php");
+	} else {
+		echo " Go ahead Log in";
+	}
+}
+
+?>
+
 <!-- 	DaysOff Application By Ashish Kapoor
 TODO:
 1. Complete Databases & Sign Up
@@ -55,14 +86,14 @@ TODO:
 	<div id="main">
 		<div id="content" class="container">
 			<img src="images/GoPro_logo.png" alt="GoPro Logo">
-			<form name="login_form" action="routes/users.php" method="post">
-				<label>Aricent ID :</label>
-				<input id="name" name="username" placeholder="Aricent ID" type="text" value=""><br />
-				<label>Password :</label>
-				<input id="password" name="password" placeholder="**********" type="password"><br />
-				<input name="submit" type="submit" value="Login">
-				<input name="clear" type="button" value="Clear">
-			</form>
+			<fieldset style="width:30%"><legend>LOG-IN HERE</legend>
+
+				<form method="POST" action="routes/connection.php">
+					Employee ID: <input type="text" name="empID" size="30" placeholder="21234"><br/>
+					Password: <input type="password" name="password" size="30" placeholder="********"><br/><br/>
+					<input id="button" type="submit" name="submit" value="Log-In">
+				</form>
+			</fieldset>
 			<p>
 				New here? <a href="routes/changepassword.php">Generate/Change Password</a>
 			</p>
