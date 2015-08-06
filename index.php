@@ -101,29 +101,16 @@ TODO:
 		</div>
 	</div>
 
-	<!-- Thought (Quote) -->
-	<div id="tweet">
-		<div class="container">
-			<section>
-				<blockquote>"Always inform before you take off". ~ 127 hours [The Movie]</blockquote>
-			</section>
-		</div>
-	</div>
-
 	<!-- Footer Part -->
 	<div id="footer">
 		<div class="container">
+
+			<img src="images/gopro_icon.png" alt="Bad Coding">
 			<section>
-				<header>
-					<p>
-						found a bug?
-					</p>
-					<h2>Report Me</h2>
+				Found a Bug? Report me!
 					<span class="inline"></span>
-				</header>
 				<a href="mailto:ashish.kapoor@aricent.com">Ashish@Aricent</a>
 			</section>
-			<img src="images/me.jpg" alt="Bad Coding">
 		</div>
 	</div>
 

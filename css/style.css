@@ -15,6 +15,7 @@ fieldset{
   margin:auto;
   padding: 20px;
 }
+
 #button{
 width:100px;
 height:40px;
@@ -30,8 +31,7 @@ font-size:20px
 		background: #161616;
 	}
 
-	body,input,textarea,select
-	{
+	body,input,textarea,select{
 		font-family: 'Roboto', sans-serif;
 		font-size: 11pt;
 		font-weight: 300;
@@ -39,177 +39,141 @@ font-size:20px
 		color: #777;
 	}
 
-	h1,h2,h3,h4,h5,h6
-	{
+	h1,h2,h3,h4,h5,h6{
 		font-weight: 300;
 		color: #777;
 	}
 
-		h2
-		{
+		h2{
 			letter-spacing: -0.025em;
 		}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
-		{
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
 			color: inherit;
 			text-decoration: none;
 		}
 
-	strong, b
-	{
+	strong, b{
 		font-weight: 500;
 		color: #000000;
 	}
 
-	em, i
-	{
+	em, i{
 		font-style: italic;
 	}
 
-	a
-	{
+	a{
 		text-decoration: none;
 		color: #80BA8E;
 	}
 
-	a:hover
-	{
+	a:hover{
 		text-decoration: underline;
 	}
 
-	sub
-	{
+	sub{
 		position: relative;
 		top: 0.5em;
 		font-size: 0.8em;
 	}
 
-	sup
-	{
+	sup{
 		position: relative;
 		top: -0.5em;
 		font-size: 0.8em;
 	}
 
-	hr
-	{
+	hr{
 		border: 0;
 		border-top: solid 1px #ddd;
 		margin: 6em 0 0 0;
 		padding: 6em 0 0 0;
 	}
 
-	blockquote
-	{
-		border-left: solid 0.5em #ddd;
-		padding: 1em 0 1em 2em;
-		font-style: italic;
-	}
-
-	p, ul, ol, dl, table
-	{
+	p, ul, ol, dl, table{
 		margin-bottom: 1em;
 	}
 
-	header
-	{
+	header{
 		margin-bottom: 1.6em;
 	}
 
-		header h2
-		{
+		header h2{
 		}
 
-		header .byline
-		{
+		header .byline{
 			display: block;
 			margin: 1.5em 0 0 0;
 			padding: 0 0 0.5em 0;
 		}
 
-	footer
-	{
+	footer{
 		margin-top: 1em;
 	}
 
-	br.clear
-	{
+	br.clear{
 		clear: both;
 	}
 
-	.pennant
-	{
+	.pennant{
 		color: #bbb;
 	}
 
 	/* Sections/Articles */
 
-		section,
-		article
-		{
+		section,article{
 			margin-bottom: 3em;
 		}
 
 		section > :last-child,
-		article > :last-child
-		{
+		article > :last-child{
 			margin-bottom: 0;
 		}
 
 		section:last-child,
-		article:last-child
-		{
+		article:last-child{
 			margin-bottom: 0;
 		}
 
 		.row > section,
-		.row > article
-		{
+		.row > article{
 			margin-bottom: 0;
 		}
 
 	/* Images */
 
-		.image
-		{
+		.image{
 			display: inline-block;
 		}
 
-			.image img
-			{
+			.image img{
 				display: block;
 				width: 100%;
 			}
 
-			.image.featured
-			{
+			.image.featured{
 				display: block;
 				width: 100%;
 				margin: 0 0 2em 0;
 			}
 
-			.image.full
-			{
+			.image.full{
 				display: block;
 				width: 100%;
 				margin-bottom: 2em;
 			}
 
-			.image.left
-			{
+			.image.left{
 				float: left;
 				margin: 0 2em 2em 0;
 			}
 
-			.image.centered
-			{
+			.image.centered{
 				display: block;
 				margin: 0 0 2em 0;
 			}
 
-				.image.centered img
-				{
+				.image.centered img{
 					margin: 0 auto;
 					width: auto;
 				}
@@ -218,8 +182,7 @@ font-size:20px
 
 	/* Buttons */
 
-	.button
-	{
+	.button{
 		position: relative;
 		display: inline-block;
 		background: #80BA8E;
@@ -237,8 +200,7 @@ font-size:20px
 		border-radius: 0.25em;
 	}
 
-	.button:hover
-	{
+	.button:hover{
 		background: #70AA7E;
 		color: #FFF !important;
 	}
@@ -247,8 +209,7 @@ font-size:20px
 /* Header                                                                        */
 /*********************************************************************************/
 
-	#header
-	{
+	#header{
 		position: relative;
 		background: url(../images/header.jpg) no-repeat bottom center;
 		background-attachment: fixed;
@@ -256,8 +217,7 @@ font-size:20px
 		text-align: center;
 	}
 
-		#header:before
-		{
+		#header:before{
 			content: '';
 			position: absolute;
 			left: 0;
@@ -271,19 +231,16 @@ font-size:20px
 /* Logo                                                                          */
 /*********************************************************************************/
 
-	#logo
-	{
+	#logo{
 		position: relative;
 		z-index: 1;
 	}
 
-		#logo h1
-		{
+		#logo h1{
 			color: #FFF;
 		}
 
-		#logo a
-		{
+		#logo a{
 			display: block;
 			text-decoration: none;
 			font-weight: 300;
@@ -294,8 +251,7 @@ font-size:20px
 			margin: 0 0 0.125em 0;
 		}
 
-		#logo span
-		{
+		#logo span{
 			font-size: 1.4em;
 			color: #FFF;
 		}
@@ -304,12 +260,10 @@ font-size:20px
 /* Nav                                                                           */
 /*********************************************************************************/
 
-	#nav
-	{
+	#nav{
 	}
 
-		#nav-wrapper
-		{
+		#nav-wrapper{
 			background: rgba(0,0,0,.1);
 			position: absolute;
 			top: 0;
@@ -317,29 +271,25 @@ font-size:20px
 			width: 100%;
 		}
 
-		#nav > ul
-		{
+		#nav > ul{
 			margin: 0;
 			padding: 0;
 			text-align: center;
 		}
 
-		#nav > ul > li
-		{
+		#nav > ul > li{
 			display: inline-block;
 			border-right: 1px solid;
 			border-color: rgba(255,255,255,.1);
 		}
 
-			#nav > ul > li:last-child
-			{
+			#nav > ul > li:last-child{
 				padding-right: 0;
 				border-right: none;
 			}
 
 			#nav > ul > li > a,
-			#nav > ul > li > span
-			{
+			#nav > ul > li > span{
 				display: inline-block;
 				padding: 1.5em 1.5em;
 				letter-spacing: 0.06em;
@@ -350,13 +300,11 @@ font-size:20px
 				color: #FFF;
 			}
 
-			#nav li.active a
-			{
+			#nav li.active a{
 				color: #FFF;
 			}
 
-			#nav > ul > li > ul
-			{
+			#nav > ul > li > ul{
 				display: none;
 			}
 
@@ -364,44 +312,34 @@ font-size:20px
 /* Main                                                                          */
 /*********************************************************************************/
 
-	#main
-	{
+	#main{
 		position: relative;
 		background: #fff;
 	}
 
-	.homepage #content
-	{
+	.homepage #content{
 		text-align: center;
 	}
 
-	.homepage #content header h2
-	{
+	.homepage #content header h2{
 	}
 
-	#sidebar h2
-	{
-		display: block;
-		padding-bottom: 0.50em;
-	}
+
 
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
 
-	#footer
-	{
+	#footer{
 		position: relative;
 		text-align: center;
 	}
 
-	#footer header h2
-	{
+	#footer header h2{
 		color: #FFF !important;
 	}
 
-	#footer header .byline
-	{
+	#footer header .byline{
 		color: rgba(255,255,255,.2);
 	}
 
@@ -409,64 +347,20 @@ font-size:20px
 /* Copyright                                                                     */
 /*********************************************************************************/
 
-	#copyright
-	{
+	#copyright{
 		position: relative;
 		text-align: center;
 		color: #774535;
 	}
 
-	#copyright .container
-	{
+	#copyright .container{
 		padding: 3em 0em;
 		border-top: 1px solid;
 		border-color: rgba(255,255,255,.05);
 		color:  rgba(255,255,255,.1);
 	}
 
-	#copyright a
-	{
+	#copyright a{
 		text-decoration: none;
 		color:  rgba(255,255,255,.2);
 	}
-
-
-/*********************************************************************************/
-/* Tweet                                                                         */
-/*********************************************************************************/
-
-	#tweet
-	{
-		position: relative;
-		text-align: center;
-		background: url(../images/header.jpg) no-repeat center center;
-		background-attachment: fixed;
-		background-size: cover;
-	}
-
-		#tweet:before
-		{
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(64,64,64,0.5);
-		}
-
-		#tweet section
-		{
-			border-top: 1px solid;
-			border-bottom: 1px solid;
-			border-color: rgba(255,255,255,.1);
-		}
-
-		#tweet blockquote
-		{
-			position: relative;
-			border: none;
-			margin: 0;
-			font-weight: 300;
-			color: rgba(255,255,255,.6);
-		}
