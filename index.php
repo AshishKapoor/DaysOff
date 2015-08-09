@@ -1,34 +1,3 @@
-<?php
-//redirection function
-session_start();
-
-if ($_POST["submit"]){
-	include_once("routes/connection.php");
-
-	$empId = strip_tags($_POST["emp_id"]);
-	$password = strip_tags($_POST["password"]);
-
-	$sql = "SELECT emp_id, password FROM users WHERE emp_id = '$empId' AND password = '$password'";
-	$query = mysql_query($dbCon,$sql);
-
-	if ($query){
-		$row = mysql_fetch_row($query);
-		$dbId = $row[0];
-		$dbEmpId = $row[1];
-		$dbPassword = $row[2];
-		echo "$dbEmpId $dbPassword";
-	}
-
-	if ($empId == $dbEmpId && $password == $dbPassword){
-		//$_SESSION['empId'] = $empId;
-		header("Location: routes/admin.php");
-	} else {
-		echo " Go ahead Log in";
-	}
-}
-
-?>
-
 <!-- 	DaysOff Application By Ashish Kapoor
 TODO:
 1. Complete Databases & Sign Up
@@ -85,10 +54,10 @@ TODO:
 	<!-- Main Body -->
 	<div id="main">
 		<div id="content" class="container">
-			<img src="images/GoPro_logo.png" alt="GoPro Logo">
+
 			<fieldset style="width:30%"><legend>LOG-IN HERE</legend>
 
-				<form method="POST" action="routes/connection.php">
+				<form method="POST" action="routes/users.php">
 					Employee ID: <input type="text" name="empID" size="30" placeholder="21234"><br/>
 					Password: <input type="password" name="password" size="30" placeholder="********"><br/><br/>
 					<input id="button" type="submit" name="submit" value="Log-In">
@@ -104,9 +73,8 @@ TODO:
 	<!-- Footer Part -->
 	<div id="footer">
 		<div class="container">
-
-			<img src="images/gopro_icon.png" alt="Bad Coding">
 			<section>
+				<img src="images/GoPro_logo.png" alt="GoPro Logo"><br/>
 				Found a Bug? Report me!
 					<span class="inline"></span>
 				<a href="mailto:ashish.kapoor@aricent.com">Ashish@Aricent</a>
@@ -117,8 +85,10 @@ TODO:
 	<!-- Copyright -->
 	<div id="copyright">
 		<div class="container">
-			Design: <a href="https://www.aricent.com"> &copy; 2015 Aricent Technologies (Holdings) Ltd. All Rights Reserved</a>
+
+			<a href="https://www.aricent.com"> Design: &copy; 2015 Aricent Technologies (Holdings) Ltd. All Rights Reserved</a>
 		</div>
 	</div>
 </body>
+
 </html>
