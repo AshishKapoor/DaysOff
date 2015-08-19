@@ -57,21 +57,38 @@ mysqli_close($link);
     </div>
     <div align="center" class="leave_date">
     <form action="users.php" method="post">
-
             <h3>Apply your leave plan</h3>
-                    <br>
-                    From
-                        <input type="text" name="name" placeholder="2015/12/31">
-                    Till
-                        <input type="text" name="name" placeholder="2015/12/31">
-                        <br>
+            <table border="4px">
+                    <tr>
+                    <td>
+                        Date
+                    </td>
+                    <td>
+                        From
+                        <input type="text" name="name" placeholder="eg. 2015/12/31">
+                        Till
+                        <input type="text" name="name" placeholder="eg. 2015/12/31">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
                         <label>Reason:</label>
-                        <textarea rows="5" cols="30" name="reason" placeholder="Enter reason here..."></textarea>
-                        <br>
+                        </td>
+                        <td>
+                        <textarea rows="10" cols="70" name="reason" placeholder="Enter reason here..."></textarea>
+                        </td>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
                         <input type="submit" name="submit" value="Submit">
                         <input type="button" name="cancel" value="Cancel">
+                    </td>
+                    </tr>
                 </div>
             </form>
+
+        </table>
             <!-- Copyright -->
             <div id="copyright">
                 <div class="container">
